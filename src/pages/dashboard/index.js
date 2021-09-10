@@ -28,7 +28,7 @@ const Dashboard = () => {
     <Content
       displat="flex"
       justifyContent="center"
-      background="url(/images/bg_4.jpg)"
+      background="url(/images/bg-v2.jpg) center center"
     >
       <Header />
       <Sidebar />
@@ -50,7 +50,7 @@ const Dashboard = () => {
                 templateColumns="repeat(10, 1fr)"
                 gap={0}
                 className="account-inventory"
-                w="347px" h="174px"
+                w="344px" h="174px"
                 pr="1px" m="0 auto"
                 background="url(/images/ui/bg_inventory.png)"
                 border="2px solid #615b4f"

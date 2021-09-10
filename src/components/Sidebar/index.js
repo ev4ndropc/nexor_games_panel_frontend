@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { 
   Flex,
   Heading,
@@ -43,28 +44,33 @@ const Sidebar= () => {
             mt="1rem"
             ml="0px"
           >
-              <ListItem 
-                p="1rem 24px .5rem" 
-                color="#e4e4e4" 
-                display="flex" 
-                flexDir="row" 
-                alignItems="center" 
-                pl="0px"
-              >
-                <FiUsers size="24px"/>
-                <Text ml="1rem">My characters</Text>
-              </ListItem>
-              <ListItem 
-                p="1rem 24px .5rem" 
-                color="#e4e4e4" 
-                display="flex" 
-                flexDir="row" 
-                alignItems="center" 
-                pl="0px"
-              >
-                <BsInboxes size="22px"/>
-                <Text ml="1rem">My warehouse</Text>
-              </ListItem>
+              <Link href="/dashboard">
+                <ListItem 
+                  p="1rem 24px .5rem" 
+                  color="#e4e4e4" 
+                  display="flex" 
+                  flexDir="row" 
+                  alignItems="center" 
+                  pl="0px"
+                >
+                  <FiUsers size="24px"/>
+                  <Text ml="1rem">My characters</Text>
+                </ListItem>
+              </Link>
+              
+              <Link href="/auction">
+                <ListItem 
+                  p="1rem 24px .5rem" 
+                  color="#e4e4e4" 
+                  display="flex" 
+                  flexDir="row" 
+                  alignItems="center" 
+                  pl="0px"
+                >
+                  <BsInboxes size="22px"/>
+                  <Text ml="1rem">My warehouse</Text>
+                </ListItem>
+              </Link>
               <ListItem 
                 p="1rem 24px .5rem" 
                 color="#e4e4e4" 
