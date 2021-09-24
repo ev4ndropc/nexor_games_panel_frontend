@@ -15,8 +15,9 @@ import {
   Heading,
 } from '@chakra-ui/react'
 
+import Topbar from '../../components/Topbar'
 import Content from '../../components/Content'
-import Header from '../../components/Header'
+// import Header from '../../components/Header'
 import Sidebar from '../../components/Sidebar'
 
 const Dashboard = () => {
@@ -30,7 +31,7 @@ const Dashboard = () => {
       justifyContent="center"
       background="url(/images/bg-v2.jpg) center center"
     >
-      <Header />
+      <Topbar />
       <Sidebar />
       <Flex p="2rem 0" w="100%" flexDir="column">
         <Flex>

@@ -31,7 +31,7 @@ import { FiSettings, FiLogOut, FiUser } from 'react-icons/fi'
 import { MdDevices } from 'react-icons/md'
 import { ImGift } from 'react-icons/im'
 
-const Header = () => {
+const Topbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const [ isLoading, setIsLoading ] = useState(false)
@@ -341,4 +341,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Topbar
